@@ -39,6 +39,12 @@ export class StudentService{
         this.router.navigate(['/'])
 
     }
+
+    changeBackgroundColor(color:string){
+        return color
+    }
+
+  
    
    
 
