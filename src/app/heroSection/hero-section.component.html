@@ -1,0 +1,14 @@
+<div class="container">
+  <div appCustomStyle>
+    <div>
+      <h2><span class="one">The</span><span class="two">jitu</span><span class="three">.com</span></h2>
+    </div>
+    <div [ngStyle]="navitems()">
+      <a [routerLink]="['']" class="btn">Home</a>
+      <a *ngIf="!studentService.isLoggedIn" class="btn btn-login">Login</a>
+      <button  *ngIf="studentService.isLoggedIn" (click)="studentService.logoutUser()" class="btn btn-login" >Logout</button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  
+</div>

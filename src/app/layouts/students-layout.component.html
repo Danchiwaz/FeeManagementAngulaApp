@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="content__left">
+    <a [routerLink]="['/student']" [queryParams]="{ type: 'all' }"
+      >All students</a
+    >
+    <a [routerLink]="['/student']" [queryParams]="{ type: 'with' }"
+      >With Balance</a
+    >
+    <a [routerLink]="['/student']" [queryParams]="{ type: 'zero' }"
+      >with No Balance
+    </a>
+    <a routerLink="/student/new" class="btnAdd">Add Student</a>
+  </div>
+  <div class="content__right">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="addStudent">
+  <p>{{ addError}}</p>
+  <div class="form-group">
+    <label for="">First Name:</label>
+    <input [(ngModel)]="firstname" type="text" />
+  </div>
+  <div class="form-group">
+    <label for="">Last Name:</label>
+    <input [(ngModel)]="lastname" type="text" />
+  </div>
+  <div class="form-group">
+    <label for="">Fee Balance:</label>
+    <input [(ngModel)]="feeBalance" type="number" />
+  </div>
+  <div class="form-group">
+     <button class="addBtn" (click)="onSubmit()">Add</button>
+  </div>
+  
+  
+  
+ 
+</div>

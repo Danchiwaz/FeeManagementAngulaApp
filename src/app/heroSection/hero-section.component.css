@@ -1,0 +1,45 @@
+
+.container {
+    height: 100vh;
+    background: url(/assets/images/bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+   
+    background-color: #002233;
+}
+
+.one {
+    color: rgb(202, 202, 217);
+}
+
+.two {
+    color: orange;
+}
+
+.three {
+    color: red;
+}
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-login {
+    border: 1px solid orange;
+    transition: background-color 1s;
+}
+
+.btn-login:hover {
+    background: orange;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}

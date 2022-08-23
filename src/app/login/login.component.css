@@ -1,0 +1,89 @@
+.btn {
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-login {
+    border: 1px solid orange;
+    transition: background-color 1s;
+}
+
+.btn-login:hover {
+    background: orange;
+
+}
+.error{
+    color: orange;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    padding: 1rem 5rem;
+}
+
+.content__left {
+    background: url(/assets/images/blob2.svg);
+    background-position: center;
+    margin-top: 3rem;
+}
+
+.content__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.form-group>input {
+    width: 20rem;
+    background-color: transparent;
+    outline-color: orange;
+    border: 1px solid orange;
+    padding: 0.5rem 3rem;
+    border-radius: 40px;
+    outline: none;
+    color: orange;
+}
+
+.form-group>label {
+    color: whitesmoke;
+}
+
+.btn-submit {
+    border: none;
+    background-color: orange;
+    align-items: flex-start;
+    transition: background-color 1s;
+}
+.btn-submit:hover{
+    background: rgb(197, 144, 46);
+    color: white;
+}
+.dummy{
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    background: url(/assets/images/blob3.svg);
+}

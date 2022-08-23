@@ -1,0 +1,23 @@
+  <div class="content">
+    <div class="content__left">
+      <!-- <div class="dummy"></div> -->
+      <img src="assets/images/heros.png" alt="">
+      
+    </div>
+    <div class="content__right">
+      <div action="" class="form">
+         <p class="error">{{ errorlogin}}</p>
+         <div class="form-group">
+            <label>Email:</label>
+            <input  type="email" [(ngModel)]="usermail">
+         </div>
+         <div class="form-group">
+            <label>Password:</label>
+            <input [(ngModel)]="userpass" type="password">
+         </div>
+         <div class="form-group">
+            <button (click)="authenticateUser()" class="btn btn-submit" type="submit">Login</button>
+         </div>
+      </div>
+    </div>
+  </div>

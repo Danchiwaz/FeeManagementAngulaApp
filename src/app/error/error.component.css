@@ -1,0 +1,10 @@
+.pageNotFound{
+    height: 300px;
+    width: 400px;
+    background: url(/assets/images/pageNotFound.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+   margin-left: 25rem;
+   margin-top: 5rem;
+}

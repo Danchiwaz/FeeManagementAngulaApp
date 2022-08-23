@@ -1,0 +1,67 @@
+.content{
+    background-color: whitesmoke;
+    height: 87vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+.content__left{
+  width: 250px;
+  background-color:#002233 ;
+  border-top: 2px solid whitesmoke;
+  border-top-right-radius: 10px;
+}
+.content__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.content__left > button{
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    padding: 0.5rem 2rem;
+    border: 1px solid orange;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+.content__left>button:hover{
+    background-color: orange;
+}
+
+.table{
+  width: 70vw;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 2rem;
+ border-radius: 10px;
+
+}
+.table > thead {
+    background-color: #002233;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    
+}
+.table tr:nth-child(even) {
+    background-color: #d1caca;
+}
+
+.fee{
+    background-color: #002233;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.noStudents{
+    background-color: #002233;
+    margin-left:15rem;
+    margin-top: 15rem;
+    padding: 0.6rem 4rem;
+    border-radius: 60px;
+    color: white;
+}

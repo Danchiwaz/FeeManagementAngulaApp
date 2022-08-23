@@ -1,0 +1,28 @@
+<div class="">
+  <p>Total Payable Fee: <span class="fee">Ksh 40,000</span></p>
+</div>
+<div class="noStudents" *ngIf="!allStudents.length">
+  <p>Currently No Students , Kindly add!!</p>
+</div>
+<table class="table" *ngIf="allStudents.length > 0">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Amount Paid</th>
+      <th>Fee Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let stud of allStudents;let i = index">
+      <tr>
+        <td>{{ i | addPipe }}</td>
+        <td>{{ stud.firstname | capitalize_pipe }}</td>
+        <td>{{ stud.lastname }}</td>
+        <td>{{ stud.feeBalance |  currency:'Ksh' }}</td>
+        <td>{{ 40000 - stud.feeBalance |  currency:'Ksh' }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
